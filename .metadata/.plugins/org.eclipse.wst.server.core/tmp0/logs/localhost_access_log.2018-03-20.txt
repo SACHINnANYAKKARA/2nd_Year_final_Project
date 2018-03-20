@@ -9,3 +9,8 @@
 0:0:0:0:0:0:0:1 - - [20/Mar/2018:09:41:20 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 1936
 0:0:0:0:0:0:0:1 - - [20/Mar/2018:09:41:23 +0530] "GET /SpringMVCHibernateCRUD/deleteStock?id=2 HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [20/Mar/2018:09:41:23 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 1686
+127.0.0.1 - - [20/Mar/2018:21:07:02 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [20/Mar/2018:21:07:06 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 1686
+0:0:0:0:0:0:0:1 - - [20/Mar/2018:21:08:40 +0530] "GET /SpringMVCHibernateCRUD/newStock HTTP/1.1" 200 1772
+0:0:0:0:0:0:0:1 - - [20/Mar/2018:21:09:13 +0530] "POST /SpringMVCHibernateCRUD/saveStock HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Mar/2018:21:09:13 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 1942
