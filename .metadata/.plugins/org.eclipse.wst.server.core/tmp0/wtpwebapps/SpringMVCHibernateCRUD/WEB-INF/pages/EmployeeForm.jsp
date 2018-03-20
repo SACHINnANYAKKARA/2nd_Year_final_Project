@@ -22,7 +22,7 @@
 
     <div class="form-group">
       <label for="usr">Name:</label>
-      <form:input type="text"  path="name" class="form-control" id="usr" />
+      <form:input type="text"  path="full_name" class="form-control" id="usr" />
     </div>
 
     <div class="form-group">
@@ -48,8 +48,6 @@
     <input type="submit" value="Save">
 
    </form:form>
-   
-   
    
 </div>
     
