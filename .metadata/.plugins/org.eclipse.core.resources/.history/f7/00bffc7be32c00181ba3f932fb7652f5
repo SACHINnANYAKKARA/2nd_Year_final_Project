@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.jwt.dao.ColonoscopyDAO;
-import com.jwt.dao.StockDAO;
 import com.jwt.model.Colonoscopy;
 
 
@@ -44,11 +43,10 @@ public class ColonoscopyImpl implements ColonoscopyService {
 
 	@Override
 	public Colonoscopy updateColonoscopy(Colonoscopy colonoscopy) {
-		return colonoscopyDAO.updateColonoscopy(colonoscopy);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
-	public void setColonoscopyDAO(ColonoscopyDAO colonoscopyDAO) {
-		this.colonoscopyDAO = colonoscopyDAO;
-	}
+
 
 }

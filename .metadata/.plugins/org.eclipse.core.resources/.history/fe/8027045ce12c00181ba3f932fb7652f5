@@ -4,7 +4,8 @@ import java.util.List;
 
 import com.jwt.model.Colonoscopy;
 
-public interface ColonoscopyService {
+public interface ColonoscopyImpl {
+
 	public void addColonoscopy(Colonoscopy colonoscopy);
 
 	public List<Colonoscopy> getAllColonoscopy();
@@ -14,4 +15,5 @@ public interface ColonoscopyService {
 	public Colonoscopy getColonoscopy(int colonoscopyID);
 
 	public Colonoscopy updateColonoscopy(Colonoscopy colonoscopy);
+	
 }

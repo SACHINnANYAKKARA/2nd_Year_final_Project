@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 
 
 import com.jwt.model.Colonoscopy;
-
+import com.jwt.model.Stock;
 
 @Repository
 public class ColonoscopyDAOImpl implements ColonoscopyDAO {
