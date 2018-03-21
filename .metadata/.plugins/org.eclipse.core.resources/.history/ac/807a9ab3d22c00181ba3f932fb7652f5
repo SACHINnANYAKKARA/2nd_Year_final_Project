@@ -37,7 +37,7 @@ public class PatientServiceImpl implements PatientService {
 		
 	}
 
-	
+	@Transactional
 	public Patient getPatient(int PatientId) {
 		return patientDAO.getPatient(PatientId);
 	}

@@ -31,7 +31,7 @@ public class PatientServiceImpl implements PatientService {
 		return patientDAO.getAllPatients();
 	}
 
-	@Transactional
+	
 	public void deletePatient(Integer PatientId) {
 		patientDAO.deletePatient(PatientId);
 		
