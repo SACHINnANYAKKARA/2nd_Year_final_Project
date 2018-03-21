@@ -18,7 +18,7 @@
      <h2>Form control Registration List: input</h2>
   
  <form:form action="saveStock" method="post" modelAttribute="stock">
-   <form:hidden path="id"/>
+   <form:hidden path="ids"/>
 
     <div class="form-group">
       <label for="usr">Name:</label>

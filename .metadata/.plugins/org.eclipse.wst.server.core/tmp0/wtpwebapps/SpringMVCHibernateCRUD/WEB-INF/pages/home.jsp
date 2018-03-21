@@ -38,9 +38,9 @@
 					<td>${stock.address}</td>
 					<td>${stock.telephone}</td>
 					<td>${stock.gender}</td>
-					<td><a href="editStock?id=${stock.id}">Edit</a>
+					<td><a href="editStock?ids=${stock.ids}">Edit</a>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-						href="deleteStock?id=${stock.id}">Delete</a></td>
+						href="deleteStock?ids=${stock.ids}">Delete</a></td>
 
 				</tr>
 			</c:forEach>

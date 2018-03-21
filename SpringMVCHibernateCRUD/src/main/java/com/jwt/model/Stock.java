@@ -13,11 +13,11 @@ import javax.persistence.Table;
 @Table(name = "stock_tbl")
 public class Stock implements Serializable {
 
-	private static final long serialVersionUID = -3465813074586302847L;
+	private static final long serialVersionUID = -3465852074584302847L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private int ids;
 
 	@Column
 	private String full_name;
@@ -34,18 +34,29 @@ public class Stock implements Serializable {
 	@Column
 	private String gender;
 
-	public int getId() {
+/*	public int getId() {
 		return id;
 	}
 
 	public void setId(int id) {
 		this.id = id;
 	}
+	
+*/
+	
 
 	
 
 	public String getFull_name() {
 		return full_name;
+	}
+
+	public int getIds() {
+		return ids;
+	}
+
+	public void setIds(int ids) {
+		this.ids = ids;
 	}
 
 	public void setFull_name(String full_name) {
