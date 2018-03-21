@@ -21,7 +21,7 @@ public class PatientDAOImpl implements PatientDAO {
 	@Autowired
 	private SessionFactory sessionFactory1;    
 	
-	@Override
+	
 	public void addPatient(Patient patient) {
 		sessionFactory1.getCurrentSession().saveOrUpdate(patient);
 		
@@ -29,34 +29,30 @@ public class PatientDAOImpl implements PatientDAO {
 
 	@SuppressWarnings("unchecked")
 	public List<Patient> getAllPatients() {
-		return sessionFactory1.getCurrentSession().createQuery("from Patient")
-				.list();
+		Stock stock  = (Stock) sessionFactory1.getCurrentSession().load(
+				Stock.class, stockId);
+		if (null != stock) {
+			this.sessionFactory1.getCurrentSession().delete(stock);
+		}
 	}
 
 	@Override
 	public void deletePatient(Integer PatientId) {
-		
-		Patient patient  = (Patient) sessionFactory1.getCurrentSession().load(
-				Patient.class, PatientId );
-		if (null != patient) {
-			this.sessionFactory1.getCurrentSession().delete(patient);
-		}
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public Patient getPatient(int PatientId) {
-		return (Patient) sessionFactory1.getCurrentSession().get(
-				Stock.class, PatientId);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public Patient updatePatient(Patient patient) {
-		sessionFactory1.getCurrentSession().update(patient);
-		return patient;
+		// TODO Auto-generated method stub
+		return null;
 	}
-	
-	
 
 	
 

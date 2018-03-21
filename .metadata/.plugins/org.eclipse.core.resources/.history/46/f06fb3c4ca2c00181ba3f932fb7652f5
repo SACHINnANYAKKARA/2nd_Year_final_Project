@@ -6,6 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+
+
+
+
 import com.jwt.dao.PatientDAO;
 import com.jwt.model.Patient;
 
@@ -21,7 +25,6 @@ public class PatientServiceImpl implements PatientService {
 	
 	@Transactional
 	public void addPatient(Patient patient) {
-	
 		patientDAO.addPatient(patient);
 		
 	}
@@ -37,12 +40,12 @@ public class PatientServiceImpl implements PatientService {
 		
 	}
 
-	
+	@Override
 	public Patient getPatient(int PatientId) {
 		return patientDAO.getPatient(PatientId);
 	}
 
-	
+	@Override
 	public Patient updatePatient(Patient patient) {
 		return patientDAO.updatePatient(patient);
 	}
