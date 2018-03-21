@@ -21,7 +21,7 @@ public class PatientDAOImpl implements PatientDAO {
 	@Autowired
 	private SessionFactory sessionFactory1;    
 	
-	
+	@Override
 	public void addPatient(Patient patient) {
 		sessionFactory1.getCurrentSession().saveOrUpdate(patient);
 		

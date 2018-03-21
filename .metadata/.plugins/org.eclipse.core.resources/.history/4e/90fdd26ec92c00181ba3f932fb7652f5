@@ -9,10 +9,7 @@ import org.springframework.stereotype.Repository;
 
 
 
-
-
 import com.jwt.model.Patient;
-import com.jwt.model.Stock;
 
 
 @Repository
@@ -21,19 +18,16 @@ public class PatientDAOImpl implements PatientDAO {
 	@Autowired
 	private SessionFactory sessionFactory1;    
 	
-	
+	@Override
 	public void addPatient(Patient patient) {
 		sessionFactory1.getCurrentSession().saveOrUpdate(patient);
 		
 	}
 
-	@SuppressWarnings("unchecked")
+
 	public List<Patient> getAllPatients() {
-		Stock stock  = (Stock) sessionFactory1.getCurrentSession().load(
-				Stock.class, stockId);
-		if (null != stock) {
-			this.sessionFactory1.getCurrentSession().delete(stock);
-		}
+		return sessionFactory1.getCurrentSession().createQuery("from Patient")
+				.list();
 	}
 
 	@Override
