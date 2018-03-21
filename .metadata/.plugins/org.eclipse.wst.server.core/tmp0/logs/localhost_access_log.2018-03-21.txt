@@ -64,3 +64,6 @@
 0:0:0:0:0:0:0:1 - - [21/Mar/2018:10:06:46 +0530] "GET /SpringMVCHibernateCRUD/newStock HTTP/1.1" 200 1774
 0:0:0:0:0:0:0:1 - - [21/Mar/2018:10:06:59 +0530] "POST /SpringMVCHibernateCRUD/saveStock HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [21/Mar/2018:10:06:59 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2201
+127.0.0.1 - - [21/Mar/2018:21:51:50 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [21/Mar/2018:21:51:57 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2201
+0:0:0:0:0:0:0:1 - - [21/Mar/2018:21:52:00 +0530] "GET /SpringMVCHibernateCRUD/editStock?ids=6 HTTP/1.1" 200 1789

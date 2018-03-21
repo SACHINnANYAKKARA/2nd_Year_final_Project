@@ -6,11 +6,6 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-
-
-
-
-
 import com.jwt.model.Patient;
 import com.jwt.model.Stock;
 
@@ -57,7 +52,4 @@ public class PatientDAOImpl implements PatientDAO {
 	}
 	
 	
-
-	
-
 }

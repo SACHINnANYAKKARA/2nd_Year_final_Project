@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 public class Urine implements Serializable {
 
-	private static final long serialVersionUID = -3466713074586302847L;
+	private static final long serialVersionUID = -3415852074584302647L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -152,6 +152,4 @@ public class Urine implements Serializable {
 		this.pregnancy = pregnancy;
 	}
 	
-	
-
 }

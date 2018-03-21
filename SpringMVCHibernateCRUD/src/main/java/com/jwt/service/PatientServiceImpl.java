@@ -9,8 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.jwt.dao.PatientDAO;
 import com.jwt.model.Patient;
 
-
-
 @Service
 @Transactional
 
