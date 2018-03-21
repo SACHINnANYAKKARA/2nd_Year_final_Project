@@ -31,27 +31,26 @@ public class BloodReportServiceImpl implements BloodReportService {
 
 	@Transactional
 	public List<Blood_Report> getAllBloodReports() {
-		return bloodReportDAO.getAllBloodReports();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Transactional
 	public void deleteBloodReports(Integer BloodReportId) {
-		bloodReportDAO.deleteBloodReports(BloodReportId);
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public Blood_Report getBloodReports(int BloodReportId) {
-		return bloodReportDAO.getBloodReports(BloodReportId);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public Blood_Report updateBloodReport(Blood_Report blood_Report) {
-		return bloodReportDAO.updateBloodReport(blood_Report);
-	}
-	
-	public void setBloodReportDAO(BloodReportDAO bloodReportDAO) {
-		this.bloodReportDAO = bloodReportDAO;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

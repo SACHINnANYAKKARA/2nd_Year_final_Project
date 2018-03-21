@@ -47,11 +47,8 @@ public class BloodReportServiceImpl implements BloodReportService {
 
 	@Override
 	public Blood_Report updateBloodReport(Blood_Report blood_Report) {
-		return bloodReportDAO.updateBloodReport(blood_Report);
-	}
-	
-	public void setBloodReportDAO(BloodReportDAO bloodReportDAO) {
-		this.bloodReportDAO = bloodReportDAO;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	
