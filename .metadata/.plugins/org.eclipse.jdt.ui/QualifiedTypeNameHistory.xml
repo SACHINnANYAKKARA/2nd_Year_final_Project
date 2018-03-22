@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.jwt.service.UrineService"/>
+<fullyQualifiedTypeName name="com.jwt.dao.UrineDAO"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.jwt.model.Patient_Fee"/>
+<fullyQualifiedTypeName name="com.jwt.dao.PatientFeeDAO"/>
+<fullyQualifiedTypeName name="com.jwt.model.PatientFee"/>
+</qualifiedTypeNameHistroy>

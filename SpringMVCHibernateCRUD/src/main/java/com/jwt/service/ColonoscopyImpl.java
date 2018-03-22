@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.jwt.dao.ColonoscopyDAO;
-import com.jwt.dao.StockDAO;
 import com.jwt.model.Colonoscopy;
 
 

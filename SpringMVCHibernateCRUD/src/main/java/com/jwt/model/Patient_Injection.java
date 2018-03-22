@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "patient_medicine")
+@Table(name = "patient_injection_dates")
 
 public class Patient_Injection implements Serializable {
 
@@ -25,7 +25,6 @@ public class Patient_Injection implements Serializable {
 	
 	@Column
 	private String status;
-	
 	
 	
 }
