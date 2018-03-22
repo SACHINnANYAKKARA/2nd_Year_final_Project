@@ -37,12 +37,14 @@ public class UrineServiceImpl implements UrineService  {
 
 	@Override
 	public Urine getUrine(int urineid) {
-		return urineDAO.getUrine(urineid);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public Urine updateUrine(Urine urine) {
-		return urineDAO.updateUrine(urine);
+		// TODO Auto-generated method stub
+		return null;
 	}	
 	
 	public void setUrineDAO(UrineDAO urineDAO) {
