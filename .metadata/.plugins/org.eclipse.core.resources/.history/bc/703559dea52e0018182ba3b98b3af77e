@@ -1,0 +1,54 @@
+package com.jwt.dao;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.jwt.model.PatientDiagnosis;
+
+
+
+@Repository
+
+
+public class PatientDiagnosisImpl implements PatientDiagnosisDAO {
+
+
+	@Autowired
+	private SessionFactory sessionFactory1;
+
+	@Override
+	public void addPatientDiagnosis(PatientDiagnosis patientDiagnosis) {
+		sessionFactory1.getCurrentSession().saveOrUpdate(patientDiagnosis);
+		
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<PatientDiagnosis> getAllPatientDiagnosis() {
+		return sessionFactory1.getCurrentSession().createQuery("from PatientDiagnosis")
+				.list();
+	}
+
+	@Override
+	public void deletePatientDiagnosis(Integer PatientDiagnosisId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public PatientDiagnosis getPatientDiagnosis(int PatientDiagnosisId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PatientDiagnosis updatePatientDiagnosis(
+			PatientDiagnosis patientDiagnosis) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}
