@@ -6,9 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-
 import com.jwt.model.PatientMedicine;
-import com.jwt.model.Stock;
 
 
 
@@ -33,25 +31,20 @@ public class PatientMedicineImpl implements PatientMedicineDAO {
 
 	@Override
 	public void deletePatientMedicine(Integer PatientMedicineID) {
-		
-		PatientMedicine patienMedicine  = (PatientMedicine) sessionFactory1.getCurrentSession().load(
-				PatientMedicine.class, PatientMedicineID );
-		if (null != patienMedicine) {
-			this.sessionFactory1.getCurrentSession().delete(patienMedicine);
-		}
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public PatientMedicine getPatientMedicine(int PatientMedicineID) {
-		return (PatientMedicine) sessionFactory1.getCurrentSession().get(
-				Stock.class, PatientMedicineID);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public PatientMedicine updatePatientMedicine(PatientMedicine patientMedicine) {
-		sessionFactory1.getCurrentSession().update(patientMedicine);
-		return patientMedicine;
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
