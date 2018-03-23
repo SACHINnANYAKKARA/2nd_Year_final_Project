@@ -6,6 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+
+
+
+import com.jwt.dao.ColonoscopyDAO;
 import com.jwt.dao.PatientFeeDAO;
 import com.jwt.model.PatientFee;
 
@@ -42,7 +46,8 @@ public class PatientFeeServiceImpl implements PatientFeeService {
 
 	@Override
 	public PatientFee updatePatientFee(PatientFee patientFee) {
-		return patientFeeDAO.updatePatientFee(patientFee);
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	public void setPatientFee(PatientFeeDAO patientFeeDAO) {
