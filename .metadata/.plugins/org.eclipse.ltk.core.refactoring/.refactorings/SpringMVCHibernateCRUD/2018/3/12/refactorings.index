@@ -19,3 +19,5 @@
 1521607371418	Delete element
 1521611801830	Delete element
 1521693895800	Rename type 'Patient_Fee'
+1521802005521	Rename type 'Patient_Medicine'
+1521802077840	Rename type 'PatientMedicine'
