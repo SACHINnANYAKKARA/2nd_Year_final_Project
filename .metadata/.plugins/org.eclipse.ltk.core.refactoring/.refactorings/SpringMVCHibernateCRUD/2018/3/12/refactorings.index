@@ -23,3 +23,5 @@
 1521802077840	Rename type 'PatientMedicine'
 1521898460441	Rename type 'Blood_Report'
 1521898516695	Rename type 'Patient_Injection'
+1521900545041	Rename type 'Patient_Advice'
+1521900577074	Rename type 'PatientAdvice'
