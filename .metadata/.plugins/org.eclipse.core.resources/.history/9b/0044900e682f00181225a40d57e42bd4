@@ -6,7 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.jwt.model.BloodReport;
+import com.jwt.model.Blood_Report;
 
 
 
@@ -19,12 +19,12 @@ public class BloodReportDAOImpl implements BloodReportDAO {
 		private SessionFactory sessionFactory1;
 
 		@Override
-		public void addBloodReport(BloodReport blood_Report) {
+		public void addBloodReport(Blood_Report blood_Report) {
 			sessionFactory1.getCurrentSession().saveOrUpdate(blood_Report);
 		}
 
 		@SuppressWarnings("unchecked")
-		public List<BloodReport> getAllBloodReports() {
+		public List<Blood_Report> getAllBloodReports() {
 			return sessionFactory1.getCurrentSession().createQuery("from Blood_Report")
 					.list();
 		}
@@ -32,8 +32,8 @@ public class BloodReportDAOImpl implements BloodReportDAO {
 		@Override
 		public void deleteBloodReports(Integer BloodReportId) {
 			
-			BloodReport blood_Report  = (BloodReport) sessionFactory1.getCurrentSession().load(
-					BloodReport.class, BloodReportId);
+			Blood_Report blood_Report  = (Blood_Report) sessionFactory1.getCurrentSession().load(
+					Blood_Report.class, BloodReportId);
 			if (null != blood_Report) {
 				this.sessionFactory1.getCurrentSession().delete(blood_Report);
 			}
@@ -41,13 +41,13 @@ public class BloodReportDAOImpl implements BloodReportDAO {
 		}
 
 		@Override
-		public BloodReport getBloodReports(int BloodReportId) {
-			return (BloodReport) sessionFactory1.getCurrentSession().get(
-					BloodReport.class, BloodReportId);
+		public Blood_Report getBloodReports(int BloodReportId) {
+			return (Blood_Report) sessionFactory1.getCurrentSession().get(
+					Blood_Report.class, BloodReportId);
 		}
 
 		@Override
-		public BloodReport updateBloodReport(BloodReport blood_Report) {
+		public Blood_Report updateBloodReport(Blood_Report blood_Report) {
 			sessionFactory1.getCurrentSession().update(blood_Report);
 			return blood_Report;
 		}    

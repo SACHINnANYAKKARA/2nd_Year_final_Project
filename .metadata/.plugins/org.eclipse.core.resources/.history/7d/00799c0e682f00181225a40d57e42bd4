@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 import com.jwt.dao.BloodReportDAO;
-import com.jwt.model.BloodReport;
+import com.jwt.model.Blood_Report;
 
 
 @Service
@@ -22,14 +22,14 @@ public class BloodReportServiceImpl implements BloodReportService {
 	private BloodReportDAO bloodReportDAO;
 
 	@Transactional
-	public void addBloodReport(BloodReport blood_Report) {
+	public void addBloodReport(Blood_Report blood_Report) {
 		
 		bloodReportDAO.addBloodReport(blood_Report);
 		
 	}
 
 	@Transactional
-	public List<BloodReport> getAllBloodReports() {
+	public List<Blood_Report> getAllBloodReports() {
 		return bloodReportDAO.getAllBloodReports();
 	}
 
@@ -40,12 +40,12 @@ public class BloodReportServiceImpl implements BloodReportService {
 	}
 
 	@Override
-	public BloodReport getBloodReports(int BloodReportId) {
+	public Blood_Report getBloodReports(int BloodReportId) {
 		return bloodReportDAO.getBloodReports(BloodReportId);
 	}
 
 	@Override
-	public BloodReport updateBloodReport(BloodReport blood_Report) {
+	public Blood_Report updateBloodReport(Blood_Report blood_Report) {
 		return bloodReportDAO.updateBloodReport(blood_Report);
 	}
 	

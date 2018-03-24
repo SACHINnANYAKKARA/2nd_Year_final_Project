@@ -19,18 +19,18 @@ public class PatientDiagnosisServiceImpl implements PatientDiagnosisService  {
 	@Autowired
 	private PatientDiagnosisDAO patientDiagnosisDAO;
 
-	@Transactional
+	@Override
 	public void addPatientDiagnosis(PatientDiagnosis diagnosis) {
 		patientDiagnosisDAO.addPatientDiagnosis(diagnosis);
 		
 	}
 
-	@Transactional
+	@Override
 	public List<PatientDiagnosis> getAllPatientDiagnosis() {
 		return patientDiagnosisDAO.getAllPatientDiagnosis();
 	}
 
-	@Transactional
+	@Override
 	public void deletePatientDiagnosis(Integer PatientDiagnosisID) {
 		patientDiagnosisDAO.deletePatientDiagnosis(PatientDiagnosisID);
 		
