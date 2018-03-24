@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.jwt.dao.BloodReportDAO;
 import com.jwt.dao.PatientDiagnosisDAO;
 import com.jwt.model.PatientDiagnosis;
 
@@ -21,35 +20,35 @@ public class PatientDiagnosisServiceImpl implements PatientDiagnosisService  {
 
 	@Override
 	public void addPatientDiagnosis(PatientDiagnosis diagnosis) {
-		patientDiagnosisDAO.addPatientDiagnosis(diagnosis);
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public List<PatientDiagnosis> getAllPatientDiagnosis() {
-		return patientDiagnosisDAO.getAllPatientDiagnosis();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public void deletePatientDiagnosis(Integer PatientDiagnosisID) {
-		patientDiagnosisDAO.deletePatientDiagnosis(PatientDiagnosisID);
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public PatientDiagnosis getPatientDiagnosis(int PatientDiagnosisID) {
-		return patientDiagnosisDAO.getPatientDiagnosis(PatientDiagnosisID);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public PatientDiagnosis updatePatientDiagnosis(
 			PatientDiagnosis patientDiagnosis) {
-		return patientDiagnosisDAO.updatePatientDiagnosis(patientDiagnosis);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
-	public void setPatientDiagnosis(PatientDiagnosisDAO patientDiagnosisDAO) {
-		this.patientDiagnosisDAO = patientDiagnosisDAO;
-	}
 	
 
 }

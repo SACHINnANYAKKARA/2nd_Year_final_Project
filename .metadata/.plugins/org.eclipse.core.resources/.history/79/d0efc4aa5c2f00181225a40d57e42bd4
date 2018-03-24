@@ -6,7 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-
+import com.jwt.model.Blood_Report;
 import com.jwt.model.PatientDiagnosis;
 
 
@@ -45,7 +45,7 @@ public class PatientDiagnosisImpl implements PatientDiagnosisDAO {
 	
 	public PatientDiagnosis getPatientDiagnosis(int PatientDiagnosisId) {
 		return (PatientDiagnosis) sessionFactory1.getCurrentSession().get(
-				PatientDiagnosis.class, PatientDiagnosisId);
+				Blood_Report.class, PatientDiagnosisId);
 	}
 
 	
