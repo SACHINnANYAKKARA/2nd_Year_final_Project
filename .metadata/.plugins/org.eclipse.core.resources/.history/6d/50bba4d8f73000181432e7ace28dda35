@@ -1,0 +1,20 @@
+package com.jwt.service;
+
+import java.util.List;
+
+import com.jwt.model.BiochemistryTest;
+
+public interface BiochemistryTestService {
+
+	public void addBiochemistryTest(Bio stock);
+
+	public List<Bio> getAllBiochemistryTests();
+
+	public void deleteBiochemistryTest(Integer stockId);
+
+	public Stock getBiochemistryTest(int stockid);
+
+	public Stock updateBiochemistryTest(Stock stock);
+	
+	
+}
