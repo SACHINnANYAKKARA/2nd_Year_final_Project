@@ -11,11 +11,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "patient")
+@Table(name = "patient_tbl")
 
 public class Patient implements Serializable {
 
-	private static final long serialVersionUID = -3565952074734302848L;
+	private static final long serialVersionUID = -3465745078654302847L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

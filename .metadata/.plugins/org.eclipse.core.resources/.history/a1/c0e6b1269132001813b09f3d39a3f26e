@@ -39,20 +39,18 @@
 					<td>${patient.first_name}</td>
 					<td>${patient.last_name}</td>
 					<td>${patient.address}</td>
-					<td><a href="editStock?ids=${stock.ids}">Edit</a>
+					<td><a href="editPatient?registration_no=${patient.registration_no}">Edit</a>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-						href="deleteStock?ids=${stock.ids}">Delete</a></td>
-
+						href="deletePatient?registration_no=${patient.registration_no}">Delete</a></td>
+	
 				</tr>
 			</c:forEach>
              </tbody>
 		</table>
 		<h4>
-			New Register List <a href="newStock">here</a>
+			New Patient Registration <a href="newPatient">here</a>
 			</br>
-			New Employee Register List <a href="newStock">here</a>
-		    </br>
-		    <a href="Patient.jsp">Goto B</a>
+			
 			
 			
 		</h4>

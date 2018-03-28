@@ -39,7 +39,7 @@
 					<td>${stock.telephone}</td>
 					<td>${stock.gender}</td>
 					<td><a href="editStock?ids=${stock.ids}">Edit</a>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+						 <a
 						href="deleteStock?ids=${stock.ids}">Delete</a></td>
 
 				</tr>
@@ -49,8 +49,9 @@
 		<h4>
 			New Register List <a href="newStock">here</a>
 			</br>
-			New Patient Register List <a href="Patients">here</a>
+			New Patient View <a href="PatientsView">here</a>
 		    </br>
+		    New Patient Medicine <a href="PatientsMedicines">here</a>
 		    <a href="Patient.jsp">Goto B</a>
 			
 			

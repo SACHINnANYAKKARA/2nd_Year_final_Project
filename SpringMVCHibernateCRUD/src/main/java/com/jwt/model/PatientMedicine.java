@@ -31,6 +31,14 @@ public class PatientMedicine implements Serializable {
 	
 	@Column
 	private int no_of_doses;
+	
+	@Column
+	private String injection_date;
+	
+	@Column
+	private String status;
+	
+	
 
 	public int getDignosis_no() {
 		return dignosis_no;
@@ -70,6 +78,22 @@ public class PatientMedicine implements Serializable {
 
 	public void setNo_of_doses(int no_of_doses) {
 		this.no_of_doses = no_of_doses;
+	}
+
+	public String getInjection_date() {
+		return injection_date;
+	}
+
+	public void setInjection_date(String injection_date) {
+		this.injection_date = injection_date;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
     
