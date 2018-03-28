@@ -21,7 +21,7 @@
 		 <table class="table table-condensed">
     <thead>
           <tr> 
-			
+			<th>Name1</th>
 			<th>Email</th>
 			<th>Address</th>
 			<th>Telephone</th>
@@ -34,7 +34,7 @@
 			<c:forEach var="patient" items="${listPatient}">
 				<tr>
 
-					
+					<td>${patient.registration_no}</td>
 					<td>${patient.registration_date}</td>
 					<td>${patient.first_name}</td>
 					<td>${patient.last_name}</td>
