@@ -49,7 +49,9 @@
 		<h4>
 			New Register List <a href="newStock">here</a>
 			</br>
-			New Employee Register List <a href="newStock">here</a>
+			New Patient Register List <a href="Patients">here</a>
+		    </br>
+		    <a href="Patient.jsp">Goto B</a>
 			
 			
 		</h4>

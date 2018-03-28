@@ -1,0 +1,17 @@
+127.0.0.1 - - [28/Mar/2018:15:34:50 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:34:52 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2207
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:34:58 +0530] "GET /SpringMVCHibernateCRUD/editStock?ids=8 HTTP/1.1" 200 1789
+127.0.0.1 - - [28/Mar/2018:15:37:37 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:37:44 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2260
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:37:46 +0530] "GET /SpringMVCHibernateCRUD/Patient.jsp HTTP/1.1" 404 1019
+127.0.0.1 - - [28/Mar/2018:15:44:31 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:44:34 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2260
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:44:36 +0530] "GET /SpringMVCHibernateCRUD/Patient.jsp HTTP/1.1" 404 1019
+127.0.0.1 - - [28/Mar/2018:15:56:27 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:56:30 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2259
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:56:32 +0530] "GET /SpringMVCHibernateCRUD/Patient HTTP/1.1" 200 2260
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:56:35 +0530] "GET /SpringMVCHibernateCRUD/newStock HTTP/1.1" 200 1774
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:56:41 +0530] "GET /SpringMVCHibernateCRUD/newStock HTTP/1.1" 200 1774
+127.0.0.1 - - [28/Mar/2018:15:58:35 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:58:38 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2259
+0:0:0:0:0:0:0:1 - - [28/Mar/2018:15:58:41 +0530] "GET /SpringMVCHibernateCRUD/Patients HTTP/1.1" 200 2260

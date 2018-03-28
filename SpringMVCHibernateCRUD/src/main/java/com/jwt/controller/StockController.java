@@ -39,6 +39,14 @@ public class StockController {
 		model.setViewName("home");
 		return model;
 	}
+	
+	@RequestMapping(value = "/Patients")
+	public ModelAndView listStocks(ModelAndView model) throws IOException {
+		List<Stock> listStock = stockService.getAllStocks();
+		model.addObject("listStock", listStock);
+		model.setViewName("Patient");
+		return model;
+	}
 
 	@RequestMapping(value = "/newStock", method = RequestMethod.GET)
 	public ModelAndView newContact(ModelAndView model) {

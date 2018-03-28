@@ -6,4 +6,5 @@
 <fullyQualifiedTypeName name="com.jwt.model.Patient_Fee"/>
 <fullyQualifiedTypeName name="com.jwt.dao.PatientFeeDAO"/>
 <fullyQualifiedTypeName name="com.jwt.model.PatientFee"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
 </qualifiedTypeNameHistroy>
