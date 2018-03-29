@@ -30,14 +30,14 @@ public class UrineServiceImpl implements UrineService  {
 	}
 
 	@Transactional
-	public void deleteUrine(Integer urineId) {
-		urineDAO.deleteUrine(urineId);
+	public void deleteUrine(Integer UrineId) {
+		urineDAO.deleteUrine(UrineId);
 		
 	}
 
 	@Override
-	public Urine getUrine(int urineid) {
-		return urineDAO.getUrine(urineid);
+	public Urine getUrine(int UrineId) {
+		return urineDAO.getUrine(UrineId);
 	}
 
 	@Override

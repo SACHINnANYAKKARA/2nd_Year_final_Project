@@ -52,7 +52,11 @@
 			New Patient View <a href="PatientsView">here</a>
 		    </br>
 		    New Patient Medicine <a href="PatientsMedicines">here</a>
-		    <a href="Patient.jsp">Goto B</a>
+		   <br>
+		   New Patient Urine <a href="Urines">here</a>
+		   <br>
+		    New Patient Diet <a href="DietView">here</a>
+		   
 			
 			
 		</h4>

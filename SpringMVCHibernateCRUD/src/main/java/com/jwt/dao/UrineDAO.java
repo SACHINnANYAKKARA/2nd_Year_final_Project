@@ -9,9 +9,9 @@ public interface UrineDAO {
 
 	public List<Urine> getAllUrines();
 
-	public void deleteUrine(Integer urineId);
+	public void deleteUrine(Integer UrineId);
 
-	public Urine getUrine(int urineid);
+	public Urine getUrine(int UrineId);
 
 	public Urine updateUrine(Urine urine);
 }

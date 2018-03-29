@@ -6,11 +6,6 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-
-
-
-
-import com.jwt.model.Stock;
 import com.jwt.model.Urine;
 
 @Repository
@@ -33,9 +28,9 @@ public class UrineDAOImpl implements UrineDAO {
 	}
 
 	
-	public void deleteUrine(Integer urineId) {
+	public void deleteUrine(Integer UrineId) {
 		Urine urine  = (Urine) sessionFactory1.getCurrentSession().load(
-				Urine.class, urineId);
+				Urine.class, UrineId);
 		if (null != urine) {
 			this.sessionFactory1.getCurrentSession().delete(urine);
 		}
@@ -43,9 +38,9 @@ public class UrineDAOImpl implements UrineDAO {
 	}
 
 	
-	public Urine getUrine(int urineid) {
+	public Urine getUrine(int UrineId) {
 		return (Urine) sessionFactory1.getCurrentSession().get(
-				Urine.class, urineid);
+				Urine.class, UrineId);
 	}
 
 	

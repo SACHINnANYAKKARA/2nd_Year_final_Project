@@ -1,3 +1,7 @@
 1522070070157	Rename type 'BiochemistryTestService'
 1522070084418	Rename type 'BiochemistryTest'
 1522249668990	Rename resource 'Patient.jsp'
+1522325168421	Rename resource 'Urine.jsp'
+1522325477057	Delete element
+1522328339129	Rename resource 'UrineForm.jsp'
+1522328350018	Rename resource 'UrineHome.jsp'
