@@ -15,7 +15,7 @@ public class UrineDAOImpl implements UrineDAO {
 	@Autowired
 	private SessionFactory sessionFactory1;
 
-	@Override
+	
 	public void addUrine(Urine urine) {
 		sessionFactory1.getCurrentSession().saveOrUpdate(urine);
 		
@@ -23,11 +23,11 @@ public class UrineDAOImpl implements UrineDAO {
 
 	@SuppressWarnings("unchecked")
 	public List<Urine> getAllUrines() {
-		return sessionFactory1.getCurrentSession().createQuery("from Urine")
+		return sessionFactory1.getCurrentSession().createQuery("from urine")
 				.list();
 	}
 
-	@Override
+	
 	public void deleteUrine(Integer UrineId) {
 		Urine urine  = (Urine) sessionFactory1.getCurrentSession().load(
 				Urine.class, UrineId);
@@ -37,13 +37,13 @@ public class UrineDAOImpl implements UrineDAO {
 		
 	}
 
-	@Override
+	
 	public Urine getUrine(int UrineId) {
 		return (Urine) sessionFactory1.getCurrentSession().get(
 				Urine.class, UrineId);
 	}
 
-	@Override
+	
 	public Urine updateUrine(Urine urine) {
 		sessionFactory1.getCurrentSession().update(urine);
 		return urine;

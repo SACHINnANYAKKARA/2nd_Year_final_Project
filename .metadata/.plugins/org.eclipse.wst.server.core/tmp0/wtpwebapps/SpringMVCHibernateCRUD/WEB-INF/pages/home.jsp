@@ -53,10 +53,10 @@
 		    </br>
 		    New Patient Medicine <a href="PatientsMedicines">here</a>
 		   <br>
-		   New Patient Urine <a href="Urines">here</a>
-		   <br>
-		    New Patient Diet <a href="DietView">here</a>
 		   
+		    New Patient Diet <a href="DietView">here</a>
+		   <br>
+		    New Patient Urine <a href="UrineView">here</a>
 			
 			
 		</h4>

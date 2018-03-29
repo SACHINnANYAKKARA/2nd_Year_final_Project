@@ -23,7 +23,7 @@ public class UrineDAOImpl implements UrineDAO {
 
 	@SuppressWarnings("unchecked")
 	public List<Urine> getAllUrines() {
-		return sessionFactory1.getCurrentSession().createQuery("from Urine")
+		return sessionFactory1.getCurrentSession().createQuery("from urine")
 				.list();
 	}
 

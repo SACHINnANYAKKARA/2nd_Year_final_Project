@@ -26,7 +26,7 @@ import com.jwt.service.UrineService;
 public class UrineController {
 
 	private static final Logger logger = Logger
-			.getLogger(UrineController.class);
+			.getLogger(StockController.class);
 
 	public UrineController() {
 		System.out.println("UrineController()");
@@ -36,7 +36,7 @@ public class UrineController {
 	private UrineService urineService;
 
 	@RequestMapping(value = "/UrineView")
-	public ModelAndView listUrine(ModelAndView model) throws IOException {
+	public ModelAndView listStock(ModelAndView model) throws IOException {
 		List<Urine> listUrine = urineService.getAllUrines();
 		model.addObject("listUrine", listUrine);
 		model.setViewName("PatientFeeForm");

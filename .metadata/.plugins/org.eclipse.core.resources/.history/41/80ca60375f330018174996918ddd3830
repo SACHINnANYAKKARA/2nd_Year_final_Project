@@ -26,7 +26,7 @@ import com.jwt.service.UrineService;
 public class UrineController {
 
 	private static final Logger logger = Logger
-			.getLogger(UrineController.class);
+			.getLogger(StockController.class);
 
 	public UrineController() {
 		System.out.println("UrineController()");
