@@ -149,3 +149,11 @@
 127.0.0.1 - - [29/Mar/2018:19:25:00 +0530] "GET / HTTP/1.1" 404 951
 0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:25:02 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2059
 0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:25:04 +0530] "GET /SpringMVCHibernateCRUD/DietView HTTP/1.1" 200 1184
+127.0.0.1 - - [29/Mar/2018:19:30:09 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:30:11 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2059
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:30:15 +0530] "GET /SpringMVCHibernateCRUD/DietView HTTP/1.1" 200 1312
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:30:18 +0530] "GET /SpringMVCHibernateCRUD/editPatientDiet?diagnosis_no=1 HTTP/1.1" 200 1300
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:31:30 +0530] "POST /SpringMVCHibernateCRUD/savePatientDiet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:31:30 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2059
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:31:33 +0530] "GET /SpringMVCHibernateCRUD/DietView HTTP/1.1" 200 1313
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:31:36 +0530] "GET /SpringMVCHibernateCRUD/newPatientDiet HTTP/1.1" 200 1298
