@@ -45,7 +45,7 @@ public class UrineDAOImpl implements UrineDAO {
 	
 	public Urine getUrine(int urineid) {
 		return (Urine) sessionFactory1.getCurrentSession().get(
-				Stock.class, urineid);
+				Urine.class, urineid);
 	}
 
 	

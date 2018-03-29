@@ -27,7 +27,7 @@ public class PatientController {
 			.getLogger(PatientController.class);
 
 	public PatientController() {
-		System.out.println("StockController()");
+		System.out.println("PatientController");
 	}
 
 	@Autowired

@@ -15,37 +15,42 @@
 </head>
 <body>
       <div class="container">
-     <h2>Form control Registration List: input</h2>
+     <h2>Form control Patient Medicine List: input</h2>
   
- <form:form action="saveStock" method="post" modelAttribute="patientMedicine">
-   <form:hidden path="ids"/>
+ <form:form action="savePatientMedicine" method="post" modelAttribute="patientMedicine">
+   <form:hidden path="dignosis_no"/>
 
     <div class="form-group">
-      <label for="usr">Name:</label>
-      <form:input type="text"  path="full_name" class="form-control" id="usr" />
+      <label for="usr">	medicine_no:</label>
+      <form:input type="text"  path="medicine_no" class="form-control" id="usr" />
     </div>
 
     <div class="form-group">
-      <label for="pwd">Email:</label>
-      <form:input type="text" path="email" class="form-control" id="pwd" />
+      <label for="pwd">	medicine_name:</label>
+      <form:input type="text" path="medicine_name" class="form-control" id="pwd" />
     </div>
 
      <div class="form-group">
-      <label for="usr">address:</label>
-      <form:input type="text" path="address" class="form-control" id="usr" />
+      <label for="usr">precaution:</label>
+      <form:input type="text" path="precaution" class="form-control" id="usr" />
     </div>
 
      <div class="form-group">
-      <label for="usr">Telephone:</label>
-      <form:input type="text" path="telephone" class="form-control" id="usr" />
+      <label for="usr">no_of_doses:</label>
+      <form:input type="text" path="no_of_doses" class="form-control" id="usr" />
     </div>
     
     <div class="form-group">
-      <label for="usr">gender:</label>
-      <form:input type="text" path="gender" class="form-control" id="usr" />
+      <label for="usr">	injection_date:</label>
+      <form:input type="text" path="injection_date" class="form-control" id="usr" />
     </div>
     
-    <input type="submit" value="Save">
+     <div class="form-group">
+      <label for="usr">status:</label>
+      <form:input type="text" path="status" class="form-control" id="usr" />
+    </div>
+    
+        <input type="submit" value="Save">
 
    </form:form>
    

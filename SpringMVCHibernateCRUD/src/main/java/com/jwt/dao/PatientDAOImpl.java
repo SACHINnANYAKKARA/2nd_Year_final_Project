@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.jwt.model.Patient;
-import com.jwt.model.Stock;
+
 
 
 @Repository
@@ -42,7 +42,7 @@ public class PatientDAOImpl implements PatientDAO {
 	@Override
 	public Patient getPatient(int PatientId) {
 		return (Patient) sessionFactory1.getCurrentSession().get(
-				Stock.class, PatientId);
+				Patient.class, PatientId);
 	}
 
 	@Override

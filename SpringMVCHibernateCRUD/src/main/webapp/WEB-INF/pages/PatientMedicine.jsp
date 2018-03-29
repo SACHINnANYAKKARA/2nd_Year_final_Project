@@ -40,13 +40,16 @@
 					<td>${patient.precaution}</td>
 					<td>${patient.no_of_doses}</td>
 					<td>${patient.injection_date}</td>
+	                <td><a href="editPatientMedicine?dignosis_no=${patient.dignosis_no}">Edit</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+						href="deletePatientMedicine?dignosis_no=${patient.dignosis_no}">Delete</a></td>
 	
 				</tr>
 			</c:forEach>
              </tbody>
 		</table>
 		<h4>
-			New Patient Registration <a href="newPatient">here</a>
+			New Patient Registration <a href="newPatientMedicine">here</a>
 			</br>
 			
 			

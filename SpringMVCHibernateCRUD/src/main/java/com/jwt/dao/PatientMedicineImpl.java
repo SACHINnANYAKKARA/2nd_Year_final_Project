@@ -45,7 +45,7 @@ public class PatientMedicineImpl implements PatientMedicineDAO {
 	@Override
 	public PatientMedicine getPatientMedicine(int PatientMedicineID) {
 		return (PatientMedicine) sessionFactory1.getCurrentSession().get(
-				Stock.class, PatientMedicineID);
+				PatientMedicine.class, PatientMedicineID);
 	}
 
 	@Override
