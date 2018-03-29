@@ -41,7 +41,7 @@ public class PatientFeeDAOImpl implements PatientFeeDAO {
 	@Override
 	public PatientFee getPatientFee(int PatientFeeID) {
 		return (PatientFee) sessionFactory1.getCurrentSession().get(
-				PatientFee.class, PatientFeeID);
+				Stock.class, PatientFeeID);
 	}
 
 	@Override

@@ -157,3 +157,5 @@
 0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:31:30 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2059
 0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:31:33 +0530] "GET /SpringMVCHibernateCRUD/DietView HTTP/1.1" 200 1313
 0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:31:36 +0530] "GET /SpringMVCHibernateCRUD/newPatientDiet HTTP/1.1" 200 1298
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:36:25 +0530] "POST /SpringMVCHibernateCRUD/savePatientDiet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [29/Mar/2018:19:36:25 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2059
