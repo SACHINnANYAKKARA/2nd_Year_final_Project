@@ -56,3 +56,9 @@
 0:0:0:0:0:0:0:1 - - [30/Mar/2018:13:30:43 +0530] "GET /SpringMVCHibernateCRUD/editUrine?registration_no=2 HTTP/1.1" 200 2876
 0:0:0:0:0:0:0:1 - - [30/Mar/2018:13:30:52 +0530] "POST /SpringMVCHibernateCRUD/saveUrine HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [30/Mar/2018:13:30:52 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2068
+127.0.0.1 - - [30/Mar/2018:18:59:49 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:18:59:53 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2144
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:18:59:55 +0530] "GET /SpringMVCHibernateCRUD/ColonoscopyView HTTP/1.1" 200 277
+127.0.0.1 - - [30/Mar/2018:19:05:19 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:19:05:21 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2144
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:19:05:25 +0530] "GET /SpringMVCHibernateCRUD/ColonoscopyView HTTP/1.1" 200 1424
