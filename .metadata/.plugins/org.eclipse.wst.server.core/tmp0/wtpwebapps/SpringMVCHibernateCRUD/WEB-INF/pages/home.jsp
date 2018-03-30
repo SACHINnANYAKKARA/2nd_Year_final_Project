@@ -56,7 +56,7 @@
 		   
 		    New Patient Diet <a href="DietView">here</a>
 		   <br>
-		    New Patient Urine <a href="UrineView">here</a>
+		    New Patient Urine View <a href="UrineView">here</a>
 			
 			
 		</h4>
