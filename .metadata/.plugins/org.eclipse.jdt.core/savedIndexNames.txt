@@ -18,7 +18,6 @@ INDEX VERSION 1.126+C:\Users\sachincloud\Desktop\Amazon Alexa\2nd_Year_final_Pro
 875975394.index
 3552811701.index
 914924236.index
-1700730472.index
 2422426042.index
 1654354172.index
 4130409490.index
