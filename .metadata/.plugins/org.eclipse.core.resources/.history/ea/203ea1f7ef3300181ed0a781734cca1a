@@ -39,8 +39,8 @@
 					<td>${urine.date}</td>
 					<td>${urine.appearance}</td>
 					<td>${urine.specific_gravity}</td>
-					<td><a href="editUrine?registration_no=${urine.registration_no}">Edit</a>
-						 <a
+					<td><a href="editUrine?rregistration_no=${urine.registration_no}">Edit</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
 						href="deleteUrine?registration_no=${urine.registration_no}">Delete</a></td>
 	
 				</tr>
@@ -50,6 +50,8 @@
 		<h4>
 			New Urine Registration <a href="newUrine">here</a>
 			</br>
+			
+			
 			
 		</h4>
 	</div>
