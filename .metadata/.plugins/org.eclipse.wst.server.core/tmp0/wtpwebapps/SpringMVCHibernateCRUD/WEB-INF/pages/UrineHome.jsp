@@ -35,7 +35,7 @@
 				<tr>
 
 					
-					<td>${urine.registration_date}</td>
+					<td>${urine.registration_no}</td>
 					<td>${urine.date}</td>
 					<td>${urine.appearance}</td>
 					<td>${urine.specific_gravity}</td>

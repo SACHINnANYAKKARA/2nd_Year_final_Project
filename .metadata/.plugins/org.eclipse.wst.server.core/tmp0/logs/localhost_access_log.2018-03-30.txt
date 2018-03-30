@@ -23,3 +23,9 @@
 0:0:0:0:0:0:0:1 - - [30/Mar/2018:12:14:19 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2063
 0:0:0:0:0:0:0:1 - - [30/Mar/2018:12:14:21 +0530] "GET /SpringMVCHibernateCRUD/PatientsView HTTP/1.1" 200 2602
 0:0:0:0:0:0:0:1 - - [30/Mar/2018:12:14:25 +0530] "GET /SpringMVCHibernateCRUD/newPatient HTTP/1.1" 200 2524
+127.0.0.1 - - [30/Mar/2018:12:42:37 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:12:42:39 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2068
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:12:42:42 +0530] "GET /SpringMVCHibernateCRUD/UrineView HTTP/1.1" 200 286
+127.0.0.1 - - [30/Mar/2018:12:52:43 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:12:52:45 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2068
+0:0:0:0:0:0:0:1 - - [30/Mar/2018:12:52:49 +0530] "GET /SpringMVCHibernateCRUD/UrineView HTTP/1.1" 500 5549
