@@ -24,3 +24,7 @@
 0:0:0:0:0:0:0:1 - - [01/Apr/2018:12:28:39 +0530] "GET /SpringMVCHibernateCRUD/editPatientFee?recipt_no=1 HTTP/1.1" 200 2798
 0:0:0:0:0:0:0:1 - - [01/Apr/2018:12:28:53 +0530] "POST /SpringMVCHibernateCRUD/savePatientFee HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [01/Apr/2018:12:28:53 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2211
+127.0.0.1 - - [01/Apr/2018:12:31:41 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [01/Apr/2018:12:31:43 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2211
+0:0:0:0:0:0:0:1 - - [01/Apr/2018:12:31:47 +0530] "GET /SpringMVCHibernateCRUD/PatientFeeView HTTP/1.1" 200 1348
+0:0:0:0:0:0:0:1 - - [01/Apr/2018:12:31:50 +0530] "GET /SpringMVCHibernateCRUD/newPatientFee HTTP/1.1" 200 2796
