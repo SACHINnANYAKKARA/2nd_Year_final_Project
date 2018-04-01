@@ -25,7 +25,7 @@ public class BloodReportDAOImpl implements BloodReportDAO {
 
 		@SuppressWarnings("unchecked")
 		public List<BloodReport> getAllBloodReports() {
-			return sessionFactory1.getCurrentSession().createQuery("from Blood_Report")
+			return sessionFactory1.getCurrentSession().createQuery("from BloodReport")
 					.list();
 		}
 

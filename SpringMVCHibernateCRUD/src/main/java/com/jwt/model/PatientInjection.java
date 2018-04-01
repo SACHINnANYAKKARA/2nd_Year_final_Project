@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 public class PatientInjection implements Serializable {
 
-	private static final long serialVersionUID = -3462817274585302847L;
+	private static final long serialVersionUID = -3462899964585302847L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

@@ -27,7 +27,7 @@ public class PatientDiagnosis implements Serializable {
 	private String diagnisys_date;
 	
 	@Column
-	private int provisional_dignosis;
+	private String provisional_dignosis;
 	
 	@Column
 	private String remark;
@@ -66,7 +66,7 @@ public class PatientDiagnosis implements Serializable {
 	private String final_diagnosis;
 	
 	@Column
-	private String ECG;
+	private int ECG;
 
 	public int getDiagnisys_no() {
 		return diagnisys_no;
@@ -92,13 +92,7 @@ public class PatientDiagnosis implements Serializable {
 		this.diagnisys_date = diagnisys_date;
 	}
 
-	public int getProvisional_dignosis() {
-		return provisional_dignosis;
-	}
-
-	public void setProvisional_dignosis(int provisional_dignosis) {
-		this.provisional_dignosis = provisional_dignosis;
-	}
+	
 
 	public String getRemark() {
 		return remark;
@@ -196,13 +190,22 @@ public class PatientDiagnosis implements Serializable {
 		this.final_diagnosis = final_diagnosis;
 	}
 
-	public String getECG() {
+	public String getProvisional_dignosis() {
+		return provisional_dignosis;
+	}
+
+	public void setProvisional_dignosis(String provisional_dignosis) {
+		this.provisional_dignosis = provisional_dignosis;
+	}
+
+	public int getECG() {
 		return ECG;
 	}
 
-	public void setECG(String eCG) {
+	public void setECG(int eCG) {
 		ECG = eCG;
 	}
+
 	
 	
 	

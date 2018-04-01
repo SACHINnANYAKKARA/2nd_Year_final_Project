@@ -12,4 +12,9 @@
 <fullyQualifiedTypeName name="com.jwt.model.Urine"/>
 <fullyQualifiedTypeName name="com.jwt.service.PatientFeeService"/>
 <fullyQualifiedTypeName name="com.jwt.model.PatientFee"/>
+<fullyQualifiedTypeName name="com.jwt.service.BloodReportService"/>
+<fullyQualifiedTypeName name="com.jwt.model.BloodReport"/>
+<fullyQualifiedTypeName name="com.jwt.model.BiochemistryTest"/>
+<fullyQualifiedTypeName name="com.jwt.service.PatientDiagnosisService"/>
+<fullyQualifiedTypeName name="com.jwt.model.PatientDiagnosis"/>
 </qualifiedTypeNameHistroy>

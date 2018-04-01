@@ -60,6 +60,10 @@
 			New Patient Colonoscopy  View <a href="ColonoscopyView">here</a>
 			<br>
 			New Patient Fee View <a href="PatientFeeView">here</a>
+			<br>
+			New Patient BloodReport <a href="BloodReportView">here</a>
+			<br>
+			New Patient PatientDiagnosisView <a href="PatientDiagnosisView">here</a>
 			
 			
 			

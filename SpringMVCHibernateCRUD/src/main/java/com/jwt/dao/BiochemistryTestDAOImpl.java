@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 
 
 import com.jwt.model.BiochemistryTest;
-import com.jwt.model.Stock;
+
 
 @Repository
 
@@ -47,7 +47,7 @@ public class BiochemistryTestDAOImpl implements BiochemistryTestDAO {
 	@Override
 	public BiochemistryTest getBiochemistryTest(int BiochemistryTestid) {
 		return (BiochemistryTest) sessionFactory1.getCurrentSession().get(
-				Stock.class, BiochemistryTestid);
+					BiochemistryTest.class, BiochemistryTestid);
 	}
 
 	@Override
