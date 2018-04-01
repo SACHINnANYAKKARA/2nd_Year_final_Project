@@ -57,7 +57,9 @@
 		   <br>
 		    New Patient Urine View <a href="UrineView">here</a>
 			<br>
-			 New Patient Colonoscopy  View <a href="ColonoscopyView">here</a>
+			New Patient Colonoscopy  View <a href="ColonoscopyView">here</a>
+			<br>
+			New Patient Fee View <a href="PatientFeeView">here</a>
 			
 			
 			

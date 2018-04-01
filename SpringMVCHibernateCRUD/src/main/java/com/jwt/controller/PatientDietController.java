@@ -17,9 +17,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 import com.jwt.model.PatientDiet;
-import com.jwt.model.PatientMedicine;
 import com.jwt.service.PatientDietService;
-import com.jwt.service.PatientMedicineService;
+
 
 @Controller
 public class PatientDietController {
