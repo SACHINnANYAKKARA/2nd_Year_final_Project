@@ -14,9 +14,19 @@
 <title>Employee Management Screen</title>
 </head>
 <body>
+
+   <select name="staffId">
+     <c:forEach var="staff" items="${listStock}">
+    <option value="${staff.ids}">${staff.email}</option>
+   </c:forEach>
+   </select>
+        
 	<div class="container">
 		<h1>Registration List</h1>
 		
+		
+		
+	
 		 <table class="table table-condensed">
     <thead>
           <tr> 
@@ -64,6 +74,9 @@
 			New Patient BloodReport <a href="BloodReportView">here</a>
 			<br>
 			New Patient PatientDiagnosisView <a href="PatientDiagnosisView">here</a>
+			<br>
+			New Patient PatientInjectionView <a href="PatientInjectionView">here</a>
+			
 			
 			
 			
