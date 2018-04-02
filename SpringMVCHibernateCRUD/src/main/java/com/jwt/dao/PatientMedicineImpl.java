@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 
 import com.jwt.model.PatientMedicine;
-import com.jwt.model.Stock;
+
 
 
 

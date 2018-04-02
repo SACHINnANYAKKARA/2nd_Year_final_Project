@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 public class BiochemistryTest implements Serializable {
 
-	private static final long serialVersionUID = -3565463244734302848L;
+	private static final long serialVersionUID = -3495252074584502847L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

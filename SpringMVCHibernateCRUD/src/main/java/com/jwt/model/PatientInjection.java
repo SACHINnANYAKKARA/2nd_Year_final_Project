@@ -25,6 +25,31 @@ public class PatientInjection implements Serializable {
 	
 	@Column
 	private String status;
+
+	public int getDignosis_no() {
+		return dignosis_no;
+	}
+
+	public void setDignosis_no(int dignosis_no) {
+		this.dignosis_no = dignosis_no;
+	}
+
+	public String getInjection_date() {
+		return injection_date;
+	}
+
+	public void setInjection_date(String injection_date) {
+		this.injection_date = injection_date;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	
 	
 }
