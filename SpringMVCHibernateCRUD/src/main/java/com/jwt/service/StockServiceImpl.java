@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 
+
+
 import com.jwt.dao.StockDAO;
 import com.jwt.model.Stock;
 
@@ -49,8 +51,24 @@ public class StockServiceImpl implements StockService {
 		return stockDAO.updateStock(stock);
 	}
 	
+	@Override
+	public Stock updateName(Stock stock) {
+		return stockDAO.updateName(stock);
+	}
+	
+	
+	@Override
+	public Stock getName(String stockid) {
+		return stockDAO.getName(stockid);
+	}
+	
 	public void setStockDAO(StockDAO stockDAO) {
 		this.stockDAO = stockDAO;
 	}
 
+
+	
+
+
+	
 }

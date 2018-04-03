@@ -20,6 +20,8 @@
     <option value="${staff.ids}">${staff.email}</option>
    </c:forEach>
    </select>
+   
+   <h1><a href="editStock?ids=${11}">Edit</a></h1>
         
 	<div class="container">
 		<h1>Registration List</h1>
@@ -30,7 +32,7 @@
 		 <table class="table table-condensed">
     <thead>
           <tr> 
-			<th>Name1</th>
+			<th>Full Name</th>
 			<th>Email</th>
 			<th>Address</th>
 			<th>Telephone</th>

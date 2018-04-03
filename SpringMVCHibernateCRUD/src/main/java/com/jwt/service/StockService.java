@@ -17,5 +17,9 @@ public interface StockService {
 	public Stock getStock(int stockid);
 
 	public Stock updateStock(Stock stock);
+
+	public Stock getName(String stockid);
+	
+	public Stock updateName(Stock stock);
 	
 }

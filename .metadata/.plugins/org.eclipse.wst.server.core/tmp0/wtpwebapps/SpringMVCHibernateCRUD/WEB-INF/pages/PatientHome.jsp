@@ -22,10 +22,10 @@
     <thead>
           <tr> 
 			
-			<th>Email</th>
+			<th>Registration Date</th>
+			<th>First Name</th>
+			<th>Last Name</th>
 			<th>Address</th>
-			<th>Telephone</th>
-			<th>Gender</th>
 			<th>Action</th>
            </tr>
           </thead>   

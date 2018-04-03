@@ -22,9 +22,9 @@
     <thead>
           <tr> 
 			
-			<th>Email</th>
-			<th>Address</th>
-			<th>Telephone</th>
+			<th>Diagnosis No</th>
+			<th>Diat Advice</th>
+			<th>Recipt No</th>
 			<th>Action</th>
            </tr>
           </thead>   

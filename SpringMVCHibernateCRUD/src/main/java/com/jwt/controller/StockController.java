@@ -84,5 +84,15 @@ public class StockController {
 
 		return model;
 	}
+	
+	@RequestMapping(value = "/editName", method = RequestMethod.GET)
+	public ModelAndView editContacts(HttpServletRequest request) {
+		String stockid = (request.getParameter("full_name"));
+		Stock stock = stockService.getName(stockid);
+		ModelAndView model = new ModelAndView("EmployeeForm");
+		model.addObject("stock", stock);
+
+		return model;
+	}
 
 }

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 
+
 import com.jwt.model.Stock;
 
 @Repository
@@ -48,6 +49,17 @@ public class StockDAOImpl implements StockDAO {
 	public Stock updateStock(Stock stock) {
 		sessionFactory1.getCurrentSession().update(stock);
 		return stock;
+	}
+
+	
+	public Stock updateName(Stock stock) {
+		sessionFactory1.getCurrentSession().update(stock);
+		return stock;
+	}
+
+	public Stock getName(String stockid) {
+		return (Stock) sessionFactory1.getCurrentSession().get(
+				Stock.class, stockid);
 	}
 
 	

@@ -22,10 +22,10 @@
     <thead>
           <tr> 
 			
-			<th>Email</th>
-			<th>Address</th>
-			<th>Telephone</th>
-			<th>Gender</th>
+			<th>Date</th>
+			<th>Anal Canal</th>
+			<th>Rectum</th>
+			<th>Sigmoid Colon</th>
 			<th>Action</th>
            </tr>
           </thead>   
