@@ -7,8 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
+import com.jwt.dao.PatientDAO;
+import com.jwt.dao.PatientMedicineDAO;
 import com.jwt.dao.RoomDAO;
+import com.jwt.model.Patient;
 import com.jwt.model.Room;
 
 @Service
@@ -35,11 +37,13 @@ public class RoomServiceImpl implements RoomService {
 		
 	}
 
-		public Room getRoom(int RoomID) {
+	@Override
+	public Room getRoom(int RoomID) {
 		return roomDAO.getRoom(RoomID);
 	}
 
-		public Room updateRoom(Room room) {
+	@Override
+	public Room updateRoom(Room room) {
 		return roomDAO.updateRoom(room);
 	}
 

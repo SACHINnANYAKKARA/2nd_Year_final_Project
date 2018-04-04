@@ -35,11 +35,13 @@ public class RoomServiceImpl implements RoomService {
 		
 	}
 
-		public Room getRoom(int RoomID) {
+	@Override
+	public Room getRoom(int RoomID) {
 		return roomDAO.getRoom(RoomID);
 	}
 
-		public Room updateRoom(Room room) {
+	@Override
+	public Room updateRoom(Room room) {
 		return roomDAO.updateRoom(room);
 	}
 

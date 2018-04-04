@@ -1,5 +1,20 @@
 package com.jwt.dao;
 
+import java.util.List;
+
+import com.jwt.model.Doctor;
+import com.jwt.model.Nurse;
+
 public interface NurseDAO {
 
+	public void addNurses(Nurse nurse);
+
+	public List<Nurse> getAllNurse();
+
+	public void deleteNurse(Integer NurseID);
+
+	public Nurse getNurse(int NurseID);
+	
+	public  Nurse updateNurse(Doctor doctor);
+	
 }
