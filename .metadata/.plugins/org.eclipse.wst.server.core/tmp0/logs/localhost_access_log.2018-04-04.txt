@@ -7,3 +7,5 @@
 0:0:0:0:0:0:0:1 - - [04/Apr/2018:09:05:31 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 14803
 0:0:0:0:0:0:0:1 - - [04/Apr/2018:09:05:56 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 14803
 0:0:0:0:0:0:0:1 - - [04/Apr/2018:09:05:58 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [04/Apr/2018:22:53:36 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [04/Apr/2018:22:53:49 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2714
