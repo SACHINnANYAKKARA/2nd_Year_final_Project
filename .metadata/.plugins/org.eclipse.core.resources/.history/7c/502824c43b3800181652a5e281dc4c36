@@ -37,12 +37,12 @@ public class AppoinmentServiceImpl implements AppoinmentService {
 		
 	}
 
-	
+	@Override
 	public Appoinment getAppoinment(int AppoinmentID) {
 		return appoinmentDAO.getAppoinment(AppoinmentID);
 	}
 
-	
+	@Override
 	public Appoinment updateAppoinment(Appoinment appoinment) {
 		return appoinmentDAO.updateAppoinment(appoinment);
 	}

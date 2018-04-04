@@ -15,6 +15,6 @@ public interface NurseDAO {
 
 	public Nurse getNurse(int NurseID);
 	
-	public  Nurse updateNurse(Nurse nurse);
+	public  Nurse updateNurse(Doctor doctor);
 	
 }

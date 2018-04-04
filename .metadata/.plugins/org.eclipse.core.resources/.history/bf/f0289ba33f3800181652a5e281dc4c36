@@ -7,9 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
+import com.jwt.dao.BiochemistryTestDAO;
+import com.jwt.dao.BloodReportDAO;
 import com.jwt.dao.NurseDAO;
-
+import com.jwt.model.BiochemistryTest;
+import com.jwt.model.Doctor;
 import com.jwt.model.Nurse;
 
 
@@ -45,8 +47,8 @@ public class NurseServiceImpl implements NurseService {
 	}
 
 	
-	public Nurse updateNurse(Nurse nurse) {
-		return nurseDAO.updateNurse(nurse);
+	public Nurse updateNurse(Doctor doctor) {
+		return nurseDAO.updateNurse(doctor);
 	}
 	
 	public void setPatientMedicine(NurseDAO nurseDAO) {
