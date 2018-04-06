@@ -1,0 +1,11 @@
+127.0.0.1 - - [05/Apr/2018:10:37:52 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [05/Apr/2018:10:37:55 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2714
+0:0:0:0:0:0:0:1 - - [05/Apr/2018:10:37:59 +0530] "GET /SpringMVCHibernateCRUD/deleteStock?ids=11 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [05/Apr/2018:10:37:59 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2443
+0:0:0:0:0:0:0:1 - - [05/Apr/2018:10:38:08 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2443
+0:0:0:0:0:0:0:1 - - [05/Apr/2018:10:39:12 +0530] "GET /SpringMVCHibernateCRUD/ColonoscopyView HTTP/1.1" 200 1638
+0:0:0:0:0:0:0:1 - - [05/Apr/2018:10:39:15 +0530] "GET /SpringMVCHibernateCRUD/deleteColonoscopy?registration_no=1 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [05/Apr/2018:10:39:15 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2443
+0:0:0:0:0:0:0:1 - - [05/Apr/2018:10:39:18 +0530] "GET /SpringMVCHibernateCRUD/PatientFeeView HTTP/1.1" 200 1348
+0:0:0:0:0:0:0:1 - - [05/Apr/2018:10:39:31 +0530] "GET /SpringMVCHibernateCRUD/PatientsMedicines HTTP/1.1" 200 1785
+0:0:0:0:0:0:0:1 - - [05/Apr/2018:10:40:07 +0530] "GET /favicon.ico HTTP/1.1" 404 973

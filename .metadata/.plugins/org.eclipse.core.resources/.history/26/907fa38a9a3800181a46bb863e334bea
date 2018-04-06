@@ -1,0 +1,81 @@
+package com.jwt.controller;
+
+
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.jboss.logging.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.jwt.model.Appoinment;
+import com.jwt.model.Patient;
+import com.jwt.model.PatientDiagnosis;
+import com.jwt.service.AppoinmentService;
+import com.jwt.service.PatientDiagnosisService;
+import com.jwt.service.PatientService;
+
+@Controller
+
+public class AppoinmentController {
+
+	private static final Logger logger = Logger
+			.getLogger(AppoinmentController.class);
+
+	public AppoinmentController() {
+		System.out.println("AppoinmentController");
+	}
+
+	@Autowired
+	private AppoinmentService appoinmentService;
+
+	@RequestMapping(value = "/AppoinmentView")
+	public ModelAndView listAppoinments(ModelAndView model) throws IOException {
+		List<Appoinment> listAppoinment = appoinmentService.getAllAppoinment();
+		model.addObject("listAppoinment", listAppoinment);
+		model.setViewName("AppoinmentHome");
+		return model;
+	}
+	
+	@RequestMapping(value = "/newAppoinment", method = RequestMethod.GET)
+	public ModelAndView newContact(ModelAndView model) {
+		Appoinment appoinment = new Appoinment();
+		model.addObject("appoinment", appoinment);
+		model.setViewName("AppoinmentForm");
+		return model;
+   }
+
+	@RequestMapping(value = "/savePatient", method = RequestMethod.POST)
+	public ModelAndView savePatient(@ModelAttribute Patient patient) {
+		if (patient.getRegistration_no() == 0) { // if employee id is 0 then creating the
+			patientService.addPatient(patient);
+		} else {
+			patientService.updatePatient(patient);
+		}
+		return new ModelAndView("redirect:/");
+	}
+
+	@RequestMapping(value = "/deletePatient", method = RequestMethod.GET)
+	public ModelAndView deletePatient(HttpServletRequest request) {
+		int PatientId = Integer.parseInt(request.getParameter("registration_no"));
+		patientService.deletePatient(PatientId);
+		return new ModelAndView("redirect:/");
+	}
+
+	@RequestMapping(value = "/editPatient", method = RequestMethod.GET)
+	public ModelAndView editContact(HttpServletRequest request) {
+		int PatientId = Integer.parseInt(request.getParameter("registration_no"));
+		Patient patient = patientService.getPatient(PatientId);
+		ModelAndView model = new ModelAndView("PatientForm");
+		model.addObject("patient", patient);
+		return model;
+	}
+	
+}

@@ -1,5 +1,66 @@
 package com.jwt.model;
+import java.io.Serializable;
 
-public class Doctor {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "doctor_tbl")
+
+
+public class Doctor implements Serializable {
+
+	private static final long serialVersionUID = -3495252052454502847L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int Doctor_Id;
+	
+	@Column
+	private String name;
+	
+	@Column
+	private String speciality;
+	
+	@Column
+	private String mbbs_no;
+
+	public int getDoctor_Id() {
+		return Doctor_Id;
+	}
+
+	public void setDoctor_Id(int doctor_Id) {
+		Doctor_Id = doctor_Id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSpeciality() {
+		return speciality;
+	}
+
+	public void setSpeciality(String speciality) {
+		this.speciality = speciality;
+	}
+
+	public String getMbbs_no() {
+		return mbbs_no;
+	}
+
+	public void setMbbs_no(String mbbs_no) {
+		this.mbbs_no = mbbs_no;
+	}
+	
+	
 
 }

@@ -20,4 +20,11 @@
 <fullyQualifiedTypeName name="com.jwt.model.BiochemistryTest"/>
 <fullyQualifiedTypeName name="com.jwt.dao.PatientInjectionDAO"/>
 <fullyQualifiedTypeName name="com.jwt.model.PatientInjection"/>
+<fullyQualifiedTypeName name="org.w3c.dom.views.DocumentView"/>
+<fullyQualifiedTypeName name="com.jwt.service.DoctorService"/>
+<fullyQualifiedTypeName name="com.jwt.model.Doctor"/>
+<fullyQualifiedTypeName name="com.jwt.service.AppoinmentService"/>
+<fullyQualifiedTypeName name="com.jwt.model.Appoinment"/>
+<fullyQualifiedTypeName name="com.jwt.service.NurseService"/>
+<fullyQualifiedTypeName name="com.jwt.model.Nurse"/>
 </qualifiedTypeNameHistroy>
