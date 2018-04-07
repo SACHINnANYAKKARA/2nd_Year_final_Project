@@ -77,7 +77,8 @@
 			New Patient PatientInjection Doctor <a href="DoctorView">here</a>
 			<br>
 			New Patient PatientInjection Doctor <a href="RoomView">here</a>
-			
+				<br>
+			New Patient PatientInjection Nurse <a href="NurseView">here</a>
 			
 			
 			

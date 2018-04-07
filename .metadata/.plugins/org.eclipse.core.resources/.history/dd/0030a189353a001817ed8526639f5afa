@@ -39,7 +39,7 @@
 					
 					<td>${nurse.name}</td>
 					<td>${nurse.level}</td>	
-					<td>${nurse.NUID}</td>	
+					<td>${nurse.Nurse_Id}</td>	
 					
 					
 					

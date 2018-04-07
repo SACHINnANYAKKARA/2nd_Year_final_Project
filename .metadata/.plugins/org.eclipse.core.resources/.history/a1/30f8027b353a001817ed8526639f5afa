@@ -29,14 +29,12 @@ public class Nurse implements Serializable {
 	@Column
 	private String start_date;
 
-	
-
-	public int getNUID() {
-		return NUID;
+	public int getNurse_Id() {
+		return Nurse_Id;
 	}
 
-	public void setNUID(int nUID) {
-		NUID = nUID;
+	public void setNurse_Id(int nurse_Id) {
+		Nurse_Id = nurse_Id;
 	}
 
 	public String getName() {
