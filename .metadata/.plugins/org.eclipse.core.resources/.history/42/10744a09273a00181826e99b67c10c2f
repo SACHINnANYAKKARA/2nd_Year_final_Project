@@ -1,0 +1,78 @@
+package com.jwt.controller;
+
+
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.jboss.logging.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.jwt.model.Appoinment;
+import com.jwt.service.AppoinmentService;
+
+
+@Controller
+
+public class AppoinmentController {
+
+	private static final Logger logger = Logger
+			.getLogger(AppoinmentController.class);
+
+	public AppoinmentController() {
+		System.out.println("AppoinmentController");
+	}
+
+	@Autowired
+	private AppoinmentService appoinmentService;
+
+	@RequestMapping(value = "/AppoinmentView")
+	public ModelAndView listAppoinments(ModelAndView model) throws IOException {
+		List<Appoinment> listAppoinment = appoinmentService.getAllAppoinment();
+		model.addObject("listAppoinment", listAppoinment);
+		model.setViewName("AppoinmentHome");
+		return model;
+	}
+	
+	@RequestMapping(value = "/newAppoinment", method = RequestMethod.GET)
+	public ModelAndView newContact(ModelAndView model) {
+		Appoinment appoinment = new Appoinment();
+		model.addObject("appoinment", appoinment);
+		model.setViewName("AppoinmentForm");
+		return model;
+   }
+
+	@RequestMapping(value = "/saveAppoinment", method = RequestMethod.POST)
+	public ModelAndView saveAppoinment(@ModelAttribute Appoinment appoinment) {
+		if (appoinment.getAppoinment_Id() == 0) { // if employee id is 0 then creating the
+			appoinmentService.addAppoinments(appoinment);
+		} else {
+			appoinmentService.updateAppoinment(appoinment);
+		}
+		return new ModelAndView("redirect:/");
+	}
+
+	@RequestMapping(value = "/deleteAppoinment", method = RequestMethod.GET)
+	public ModelAndView deleteAppoinment(HttpServletRequest request) {
+		int AppoinmentID = Integer.parseInt(request.getParameter("Appoinment_Id"));
+		appoinmentService.deleteAppoinment(AppoinmentID);
+		return new ModelAndView("redirect:/");
+	}
+
+	@RequestMapping(value = "/editAppoinment", method = RequestMethod.GET)
+	public ModelAndView editContact(HttpServletRequest request) {
+		int AppoinmentID = Integer.parseInt(request.getParameter("Appoinment_Id"));
+		Appoinment appoinment = appoinmentService.getAppoinment(AppoinmentID);
+		ModelAndView model = new ModelAndView("AppoinmentForm");
+		model.addObject("appoinment", appoinment);
+		return model;
+	}
+	
+}

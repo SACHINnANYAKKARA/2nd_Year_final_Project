@@ -51,7 +51,7 @@ public class AppoinmentController {
 
 	@RequestMapping(value = "/saveAppoinment", method = RequestMethod.POST)
 	public ModelAndView saveAppoinment(@ModelAttribute Appoinment appoinment) {
-		if (appoinment.getAppoinment_Id() == 0) { // if employee id is 0 then creating the
+		if (appoinment.getAID() == 0) { // if employee id is 0 then creating the
 			appoinmentService.addAppoinments(appoinment);
 		} else {
 			appoinmentService.updateAppoinment(appoinment);
@@ -61,14 +61,14 @@ public class AppoinmentController {
 
 	@RequestMapping(value = "/deleteAppoinment", method = RequestMethod.GET)
 	public ModelAndView deleteAppoinment(HttpServletRequest request) {
-		int AppoinmentID = Integer.parseInt(request.getParameter("Appoinment_Id"));
+		int AppoinmentID = Integer.parseInt(request.getParameter("AID"));
 		appoinmentService.deleteAppoinment(AppoinmentID);
 		return new ModelAndView("redirect:/");
 	}
 
-	@RequestMapping(value = "/editAppoinmentID", method = RequestMethod.GET)
+	@RequestMapping(value = "/editAppoinment", method = RequestMethod.GET)
 	public ModelAndView editContact(HttpServletRequest request) {
-		int AppoinmentID = Integer.parseInt(request.getParameter("Appoinment_Id"));
+		int AppoinmentID = Integer.parseInt(request.getParameter("AID"));
 		Appoinment appoinment = appoinmentService.getAppoinment(AppoinmentID);
 		ModelAndView model = new ModelAndView("AppoinmentForm");
 		model.addObject("appoinment", appoinment);

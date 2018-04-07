@@ -14,11 +14,11 @@ import javax.persistence.Table;
 
 public class Doctor implements Serializable {
 
-	private static final long serialVersionUID = -3495252052454502847L;
+	private static final long serialVersionUID = -3499252052454502841L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int Doctor_Id;
+	private int DID;
 	
 	@Column
 	private String name;
@@ -29,12 +29,14 @@ public class Doctor implements Serializable {
 	@Column
 	private String mbbs_no;
 
-	public int getDoctor_Id() {
-		return Doctor_Id;
+	
+
+	public int getDID() {
+		return DID;
 	}
 
-	public void setDoctor_Id(int doctor_Id) {
-		Doctor_Id = doctor_Id;
+	public void setDID(int dID) {
+		DID = dID;
 	}
 
 	public String getName() {

@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 public class Nurse implements Serializable {
 
-	private static final long serialVersionUID = -3912487674734302848L;
+	private static final long serialVersionUID = -3912487674734302841L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

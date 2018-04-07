@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 public class Room implements Serializable {
 
-	private static final long serialVersionUID = -346598774584502847L;
+	private static final long serialVersionUID = -346598774584502841L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

@@ -15,14 +15,7 @@
 </head>
 <body>
 
-   <select name="staffId">
-     <c:forEach var="staff" items="${listStock}">
-    <option value="${staff.ids}">${staff.email}</option>
-   </c:forEach>
-   </select>
-   
-   <h1><a href="editStock?ids=${11}">Edit</a></h1>
-        
+  
 	<div class="container">
 		<h1>Registration List</h1>
 		
@@ -78,6 +71,14 @@
 			New Patient PatientDiagnosisView <a href="PatientDiagnosisView">here</a>
 			<br>
 			New Patient PatientInjectionView <a href="PatientInjectionView">here</a>
+			<br>
+			New Patient PatientInjection Appoinment <a href="AppoinmentView">here</a>
+			<br>
+			New Patient PatientInjection Doctor <a href="DoctorView">here</a>
+			<br>
+			New Patient PatientInjection Doctor <a href="RoomView">here</a>
+			
+			
 			
 			
 			

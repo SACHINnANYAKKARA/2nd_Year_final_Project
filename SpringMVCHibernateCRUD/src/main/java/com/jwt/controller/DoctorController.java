@@ -55,7 +55,7 @@ public class DoctorController {
 
 	@RequestMapping(value = "/saveDoctor", method = RequestMethod.POST)
 	public ModelAndView saveDoctor(@ModelAttribute Doctor doctor) {
-		if (doctor.getDoctor_Id() == 0) { // if employee id is 0 then creating the
+		if (doctor.getDID() == 0) { // if employee id is 0 then creating the
 			doctorService.addDoctors(doctor);
 		} else {
 			doctorService.updateDoctor(doctor);
@@ -66,14 +66,14 @@ public class DoctorController {
 
 	@RequestMapping(value = "/deleteDoctor", method = RequestMethod.GET)
 	public ModelAndView deleteDoctor(HttpServletRequest request) {
-		int DoctorID = Integer.parseInt(request.getParameter("Doctor_Id"));
+		int DoctorID = Integer.parseInt(request.getParameter("DID"));
 		doctorService.deleteDoctor(DoctorID);
 		return new ModelAndView("redirect:/");
 	}
 
 	@RequestMapping(value = "/editDoctor", method = RequestMethod.GET)
 	public ModelAndView editDoctor(HttpServletRequest request) {
-		int DoctorID = Integer.parseInt(request.getParameter("Doctor_Id"));
+		int DoctorID = Integer.parseInt(request.getParameter("DID"));
 		Doctor doctor = doctorService.getDoctor(DoctorID);
 		ModelAndView model = new ModelAndView("DoctorForm");
 		model.addObject("doctor", doctor);
