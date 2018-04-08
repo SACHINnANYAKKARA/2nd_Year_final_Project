@@ -17,8 +17,8 @@
       <div class="container">
      <h2>Form control Registration List: input</h2>
   
- <form:form action="saveDoctor" method="post" modelAttribute="doctor">
-   <form:hidden path="DID"/>
+ <form:form action="saveNurse" method="post" modelAttribute="nurse">
+   <form:hidden path="NUID"/>
 
     <div class="form-group">
       <label for="usr">Name:</label>
@@ -26,16 +26,15 @@
     </div>
 
     <div class="form-group">
-      <label for="pwd">	speciality:</label>
-      <form:input type="text" path="speciality" class="form-control" id="pwd" />
+      <label for="pwd">level:</label>
+      <form:input type="text" path="level" class="form-control" id="pwd" />
     </div>
     
       <div class="form-group">
-      <label for="pwd">mbbs_no:</label>
-      <form:input type="text" path="mbbs_no" class="form-control" id="pwd" />
+      <label for="pwd">Start date:</label>
+      <form:input type="text" path="start_date" class="form-control" id="pwd" />
     </div>
     
-   
     
 
     <input type="submit" value="Save">

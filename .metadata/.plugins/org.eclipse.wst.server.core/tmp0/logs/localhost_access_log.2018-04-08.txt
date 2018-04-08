@@ -42,3 +42,6 @@
 0:0:0:0:0:0:0:1 - - [08/Apr/2018:21:11:33 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2577
 0:0:0:0:0:0:0:1 - - [08/Apr/2018:21:11:56 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2577
 0:0:0:0:0:0:0:1 - - [08/Apr/2018:21:12:13 +0530] "GET /SpringMVCHibernateCRUD/newStock HTTP/1.1" 200 1774
+127.0.0.1 - - [08/Apr/2018:21:20:43 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [08/Apr/2018:21:20:45 +0530] "GET /SpringMVCHibernateCRUD/ HTTP/1.1" 200 2577
+0:0:0:0:0:0:0:1 - - [08/Apr/2018:21:20:49 +0530] "GET /SpringMVCHibernateCRUD/NurseView HTTP/1.1" 200 1559
