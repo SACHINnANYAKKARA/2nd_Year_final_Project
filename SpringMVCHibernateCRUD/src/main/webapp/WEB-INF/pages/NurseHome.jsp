@@ -40,7 +40,9 @@
 					<td>${nurse.name}</td>
 					<td>${nurse.level}</td>	
 					<td>${nurse.NUID}</td>	
-					
+					 <td><a href="editNurse?NUID=${nurse.NUID}">Edit</a>
+						 <a
+						href="deleteNurse?NUID=${nurse.NUID}">Delete</a></td>
 					
 					
 	
