@@ -1,0 +1,21 @@
+package com.caveofprogramming.spring.web.dao;
+
+import java.util.List;
+
+import com.caveofprogramming.spring.web.models.Patient;
+
+
+
+public class PatientDAO {
+	
+	public void addPatient(Patient patient);
+
+	public List<Patient> getAllPatients();
+
+	public void deletePatient(Integer PatientId);
+
+	public Patient getPatient(int PatientId);
+
+	public Patient updatePatient(Patient patient);
+
+}

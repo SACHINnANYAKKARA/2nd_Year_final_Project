@@ -1,0 +1,1 @@
+New Patient View <a href="PatientsView">here</a>
