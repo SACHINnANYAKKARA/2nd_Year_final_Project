@@ -64,37 +64,16 @@
 		<put-attribute name="title" value="Logged Out"></put-attribute>
 		<put-attribute name="content" value="/WEB-INF/tiles/loggedout.jsp"></put-attribute>
 	</definition>
-
+	
 	<definition name="offercreated" extends="offers.base">
 		<put-attribute name="title" value="Offer Created"></put-attribute>
 		<put-attribute name="content" value="/WEB-INF/tiles/offercreated.jsp"></put-attribute>
 	</definition>
-
+	
 	<definition name="offerdeleted" extends="offers.base">
 		<put-attribute name="title" value="Offer Deleted"></put-attribute>
 		<put-attribute name="content" value="/WEB-INF/tiles/offerdeleted.jsp"></put-attribute>
 	</definition>
-	
-	<definition name="test2" extends="offers.base">
-		<put-attribute name="title" value="Offer Deleted"></put-attribute>
-		<put-attribute name="content" value="/WEB-INF/tiles/test2.jsp"></put-attribute>
-	</definition>
-
-<definition name="tt" extends="offers.base">
-		<put-attribute name="title" value="Offer Deleted"></put-attribute>
-		<put-attribute name="content" value="/WEB-INF/tiles/tt.jsp"></put-attribute>
-	</definition>
-	
-	<definition name="PatientHome" extends="offers.base">
-		<put-attribute name="title" value="Offer Deleted"></put-attribute>
-		<put-attribute name="content" value="/WEB-INF/tiles/PatientHome.jsp"></put-attribute>
-	</definition>
-	
-	<definition name="PatientForm" extends="offers.base">
-		<put-attribute name="title" value="Offer Deleted"></put-attribute>
-		<put-attribute name="content" value="/WEB-INF/tiles/PatientForm.jsp"></put-attribute>
-	</definition>
-
 </tiles-definitions>
 
 

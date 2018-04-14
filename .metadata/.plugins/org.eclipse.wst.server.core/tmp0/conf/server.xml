@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="C:\Users\sachincloud\Desktop\Amazon Alexa\2nd_Year_final_Project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\sachincloud\Desktop\Amazon Alexa\2nd_Year_final_Project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\offers" path="/spring" reloadable="true" source="org.eclipse.jst.jee.server:offers"/><Context docBase="C:\Users\sachincloud\Desktop\Amazon Alexa\2nd_Year_final_Project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SpringMVCHibernateCRUD" path="/SpringMVCHibernateCRUD" reloadable="true" source="org.eclipse.jst.j2ee.server:SpringMVCHibernateCRUD"/></Host>
+      <Context docBase="C:\Users\sachincloud\Desktop\Amazon Alexa\2nd_Year_final_Project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\sachincloud\Desktop\Amazon Alexa\2nd_Year_final_Project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SpringMVCHibernateCRUD" path="/SpringMVCHibernateCRUD" reloadable="true" source="org.eclipse.jst.j2ee.server:SpringMVCHibernateCRUD"/><Context docBase="C:\Users\sachincloud\Desktop\Amazon Alexa\2nd_Year_final_Project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\offers" path="/spring" reloadable="true" source="org.eclipse.jst.jee.server:offers"/></Host>
     </Engine>
   </Service>
 </Server>
